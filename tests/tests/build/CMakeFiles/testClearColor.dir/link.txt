@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtestClearColor.a CMakeFiles/testClearColor.dir/testClearColor.cpp.o
+/usr/bin/ranlib libtestClearColor.a

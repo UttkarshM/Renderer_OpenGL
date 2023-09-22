@@ -1,0 +1,4 @@
+/home/uttkarsh/OPENGL/open_gl/src/tests/build/CMakeFiles/testClearColor.dir
+/home/uttkarsh/OPENGL/open_gl/src/tests/build/CMakeFiles/test.dir
+/home/uttkarsh/OPENGL/open_gl/src/tests/build/CMakeFiles/edit_cache.dir
+/home/uttkarsh/OPENGL/open_gl/src/tests/build/CMakeFiles/rebuild_cache.dir
