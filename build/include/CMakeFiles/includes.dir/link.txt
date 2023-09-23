@@ -1,0 +1,2 @@
+/usr/bin/ar qc libincludes.a CMakeFiles/includes.dir/VAO.o CMakeFiles/includes.dir/VBO.o CMakeFiles/includes.dir/EBO.o CMakeFiles/includes.dir/shaderClass.o CMakeFiles/includes.dir/texture.o CMakeFiles/includes.dir/renderer.o
+/usr/bin/ranlib libincludes.a

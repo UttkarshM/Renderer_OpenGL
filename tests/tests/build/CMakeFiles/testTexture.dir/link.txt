@@ -1,2 +1,0 @@
-/usr/bin/ar qc libtestTexture.a CMakeFiles/testTexture.dir/testTexture.cpp.o
-/usr/bin/ranlib libtestTexture.a

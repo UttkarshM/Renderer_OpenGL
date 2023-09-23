@@ -6,7 +6,9 @@ add_subdirectory(external/imgui)
 
 
 add_subdirectory(include)
-add_subdirectory(tests/tests)
+add_subdirectory(tests/shapes)
 
-
-
+add_subdirectory(src )
+# target_link_libraries(${PROJECT_NAME} PUBLIC 
+# tests
+# )
