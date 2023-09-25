@@ -6,13 +6,24 @@ namespace Shapes{
     :translation(200,0,0)
     {
     GLfloat vertices[]={
-      -0.5f,-0.5f,
-      0.0f,0.5f, 
-      0.5f,-0.5f
+      50.0f,50.0f,
+      0.0f,50.0f, 
+      50.0f,-50.0f
     };
     GLuint indices[]={
       0,1,2
     };
+    /*   GLfloat vertices[]={ */
+    /*   -50.0f,-50.0f, //bottom left 0 */
+    /*   50.0f,-50.0f,//top left 1 */
+    /*   50.0f,50.0f,//top right 2 */
+    /*   -50.0f,50.0f //bottom right 4 */
+    /* }; */
+    /* GLuint indices[]={ */
+    /*   0,1,2, */
+    /*   2,3,0 */
+    /* }; */
+
 
     shader = std::make_unique<Shader>("/home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/resources/shaders/shapes/vert.shader",
         "/home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/resources/shaders/shapes/frag.shader");
