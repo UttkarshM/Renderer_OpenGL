@@ -314,7 +314,7 @@ external/glfw/src/CMakeFiles/glfw.dir/clean:
 external/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/update_mappings.dir/build.make external/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/update_mappings.dir/build.make external/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles --progress-num=48 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles --progress-num=49 "Built target update_mappings"
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -395,12 +395,12 @@ tests/shapes/CMakeFiles/shapes.dir/all: external/imgui/CMakeFiles/imgui.dir/all
 tests/shapes/CMakeFiles/shapes.dir/all: include/CMakeFiles/includes.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles --progress-num=44,45,46,47 "Built target shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles --progress-num=44,45,46,47,48 "Built target shapes"
 .PHONY : tests/shapes/CMakeFiles/shapes.dir/all
 
 # Build rule for subdir invocation for target.
 tests/shapes/CMakeFiles/shapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/shapes/CMakeFiles/shapes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles 0
 .PHONY : tests/shapes/CMakeFiles/shapes.dir/rule
@@ -430,7 +430,7 @@ src/CMakeFiles/OpenGL_libs.dir/all: tests/shapes/CMakeFiles/shapes.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/OpenGL_libs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/OpenGL_libs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/OpenGL_libs.dir/rule

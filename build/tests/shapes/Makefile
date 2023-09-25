@@ -176,6 +176,21 @@ shapes/fast:
 .PHONY : shapes/fast
 
 # target to build an object file
+camera.o:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/camera.o
+.PHONY : camera.o
+
+# target to preprocess a source file
+camera.i:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/camera.i
+.PHONY : camera.i
+
+# target to generate assembly for a file
+camera.s:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/camera.s
+.PHONY : camera.s
+
+# target to build an object file
 color.o:
 	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/color.o
 .PHONY : color.o
@@ -233,6 +248,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... shapes"
+	@echo "... camera.o"
+	@echo "... camera.i"
+	@echo "... camera.s"
 	@echo "... color.o"
 	@echo "... color.i"
 	@echo "... color.s"

@@ -167,6 +167,7 @@ src/CMakeFiles/OpenGL_libs.dir/shapes.o: /home/uttkarsh/OpenGL_Library/OpenGL_li
   /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glm/glm/gtc/matrix_transform.hpp \
   /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glm/glm/gtc/matrix_transform.inl \
   /home/uttkarsh/OpenGL_Library/OpenGL_library/include/stb_image.h \
+  /home/uttkarsh/OpenGL_Library/OpenGL_library/include/texture.h \
   /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/color.h \
   /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/menu.h \
   /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/shapes.h \
@@ -702,6 +703,8 @@ src/CMakeFiles/OpenGL_libs.dir/shapes.o: /home/uttkarsh/OpenGL_Library/OpenGL_li
 
 /usr/include/c++/13.2.1/bits/basic_string.h:
 
+/usr/include/c++/13.2.1/bits/basic_ios.tcc:
+
 /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glm/glm/detail/func_integer.inl:
 
 /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glm/glm/ext/vector_bool3_precision.hpp:
@@ -923,8 +926,6 @@ src/CMakeFiles/OpenGL_libs.dir/shapes.o: /home/uttkarsh/OpenGL_Library/OpenGL_li
 /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glm/glm/detail/type_mat2x3.inl:
 
 /home/uttkarsh/OpenGL_Library/OpenGL_library/external/imgui/imgui_impl_glfw.h:
-
-/usr/include/c++/13.2.1/bits/basic_ios.tcc:
 
 /usr/include/sys/single_threaded.h:
 
@@ -1167,6 +1168,8 @@ src/CMakeFiles/OpenGL_libs.dir/shapes.o: /home/uttkarsh/OpenGL_Library/OpenGL_li
 /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glm/glm/gtc/constants.inl:
 
 /usr/include/c++/13.2.1/bits/exception_defines.h:
+
+/home/uttkarsh/OpenGL_Library/OpenGL_library/include/texture.h:
 
 /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glm/glm/ext/matrix_clip_space.inl:
 

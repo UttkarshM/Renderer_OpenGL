@@ -350,6 +350,7 @@ src/CMakeFiles/OpenGL_libs.dir/shapes.o: \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/color.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/menu.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/triangles.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/camera.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/matrix_transform.hpp \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../ext/matrix_projection.hpp \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../ext/../gtc/constants.hpp \
@@ -363,8 +364,64 @@ src/CMakeFiles/OpenGL_libs.dir/shapes.o: \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../ext/matrix_transform.hpp \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../ext/matrix_transform.inl \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/matrix_transform.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/type_ptr.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/quaternion.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_relational.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_relational.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/../detail/type_float.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/../detail/setup.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_common.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_common.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_float.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/../detail/type_quat.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/../detail/type_quat.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_float_precision.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_double.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_double_precision.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_trigonometric.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_trigonometric.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_transform.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/quaternion_transform.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/quaternion.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/epsilon.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../detail/setup.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/epsilon.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/vec1.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_bool1.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_bool1_precision.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_float1.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_float1_precision.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_double1.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_double1_precision.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_int1.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_int1_sized.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_uint1.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
+ /usr/include/c++/13.2.1/cstring \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtc/type_ptr.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/rotate_vector.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/transform.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/transform.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/rotate_vector.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/vector_angle.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/quaternion.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/../ext/quaternion_exponential.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/../ext/quaternion_exponential.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/../gtx/norm.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/../gtx/../gtx/component_wise.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/../gtx/../gtx/../detail/setup.hpp \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/../gtx/../gtx/component_wise.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/../gtx/norm.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/quaternion.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/vector_angle.inl \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../include/stb_image.h \
- /usr/include/c++/13.2.1/stdlib.h /usr/include/c++/13.2.1/algorithm \
+ /usr/include/c++/13.2.1/stdlib.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../include/texture.h \
+ /usr/include/c++/13.2.1/algorithm \
  /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13.2.1/pstl/execution_defs.h \
  /usr/include/c++/13.2.1/memory \

@@ -168,6 +168,7 @@ src/CMakeFiles/OpenGL_libs.dir/shapes.o
  /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glm/glm/gtc/matrix_transform.hpp
  /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glm/glm/gtc/matrix_transform.inl
  /home/uttkarsh/OpenGL_Library/OpenGL_library/include/stb_image.h
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/include/texture.h
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/color.h
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/menu.h
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/shapes.h

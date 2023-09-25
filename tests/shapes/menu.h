@@ -9,7 +9,7 @@ namespace Shapes{
     ~Menu();
     template<typename T>
     void RegisterProp(const std::string& name){
-    std::cout<<"registered the option";
+    std::cout<<"registered the option"<<name<<std::endl;
     Options.push_back(std::make_pair(name,[](){return new T();}));
     }
     void imGuiRender() override;

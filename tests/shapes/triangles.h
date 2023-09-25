@@ -1,6 +1,6 @@
 #pragma once
 #include "shapes.h"
-
+#include "camera.h"
 #include "../../external/glm/glm/glm.hpp"
 #include "../../external/glm/glm/gtc/matrix_transform.hpp"
 
@@ -13,6 +13,8 @@
 #include "../../include/renderer.h"
 #include "../../include/stb_image.h"
 #include "../../include/layout.h"
+#include "../../include/texture.h"
+
 
 #include <algorithm>
 #include <memory>
@@ -28,8 +30,12 @@ namespace Shapes{
       ~Triangle();
       void onRender() override;
       void imGuiRender() override;
+      void Scale();
     private:
       glm::vec3 translation;
+      glm::vec3 translationview;
+      float scale;
+      float rotate;
       /* glm::mat4 view; */
       /* glm::mat4 proj; */
 
@@ -37,6 +43,8 @@ namespace Shapes{
       std::unique_ptr<EBO> ebo;
       std::unique_ptr<Shader> shader;
       std::unique_ptr<Renderer> renderer;
+      std::unique_ptr<Texture> texture;
+      std::unique_ptr<Camera> camera;
   };
 
 }
