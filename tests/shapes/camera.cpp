@@ -15,5 +15,19 @@ void Camera::Matrix(float FOVdeg,float nearPlane,float farPlane,Shader& shader,c
 
   projection = glm::perspective(glm::radians(FOVdeg),(float)(width/height),nearPlane,farPlane);
   shader.UseUniformMat4f(uniform,projection*view);
+}
 
+void Camera::Inputs(GLFWwindow* window){
+  if(glfwGetKey(window,GLFW_KEY_W) == GLFW_PRESS){
+    Position += speed * Orientation;
+  }
+  if(glfwGetKey(window,GLFW_KEY_A) == GLFW_PRESS){
+    Position += speed * -glm::normalize(glm::cross(Orientation,Up));
+  }
+  if(glfwGetKey(window,GLFW_KEY_S) == GLFW_PRESS){
+    Position += speed * -Orientation;
+  }
+  if(glfwGetKey(window,GLFW_KEY_D) == GLFW_PRESS){
+    Position += speed * -glm::normalize(glm::cross(Orientation,Up));
+  }
 }

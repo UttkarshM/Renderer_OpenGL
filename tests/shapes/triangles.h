@@ -30,12 +30,15 @@ namespace Shapes{
       ~Triangle();
       void onRender() override;
       void imGuiRender() override;
+      void Rotate();
       void Scale();
     private:
       glm::vec3 translation;
       glm::vec3 translationview;
       float scale;
-      float rotate;
+      float rotatey;
+      float rotatez;
+      float rotatex;
       /* glm::mat4 view; */
       /* glm::mat4 proj; */
 

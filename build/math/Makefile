@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles /home/uttkarsh/OpenGL_Library/OpenGL_library/build/tests/tests//CMakeFiles/progress.marks
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/tests/all
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles /home/uttkarsh/OpenGL_Library/OpenGL_library/build/math//CMakeFiles/progress.marks
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 math/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/tests/clean
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 math/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,12 +148,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/tests/preinstall
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 math/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/tests/preinstall
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 math/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -162,90 +162,33 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/tests/CMakeFiles/tests.dir/rule:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/tests/CMakeFiles/tests.dir/rule
-.PHONY : tests/tests/CMakeFiles/tests.dir/rule
+math/CMakeFiles/OpenGL_libs.dir/rule:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 math/CMakeFiles/OpenGL_libs.dir/rule
+.PHONY : math/CMakeFiles/OpenGL_libs.dir/rule
 
 # Convenience name for target.
-tests: tests/tests/CMakeFiles/tests.dir/rule
-.PHONY : tests
+OpenGL_libs: math/CMakeFiles/OpenGL_libs.dir/rule
+.PHONY : OpenGL_libs
 
 # fast build rule for target.
-tests/fast:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
-
-test.o: test.cpp.o
-.PHONY : test.o
+OpenGL_libs/fast:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f math/CMakeFiles/OpenGL_libs.dir/build.make math/CMakeFiles/OpenGL_libs.dir/build
+.PHONY : OpenGL_libs/fast
 
 # target to build an object file
-test.cpp.o:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/test.cpp.o
-.PHONY : test.cpp.o
-
-test.i: test.cpp.i
-.PHONY : test.i
+dot.o:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f math/CMakeFiles/OpenGL_libs.dir/build.make math/CMakeFiles/OpenGL_libs.dir/dot.o
+.PHONY : dot.o
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/test.cpp.i
-.PHONY : test.cpp.i
-
-test.s: test.cpp.s
-.PHONY : test.s
+dot.i:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f math/CMakeFiles/OpenGL_libs.dir/build.make math/CMakeFiles/OpenGL_libs.dir/dot.i
+.PHONY : dot.i
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/test.cpp.s
-.PHONY : test.cpp.s
-
-testClearColor.o: testClearColor.cpp.o
-.PHONY : testClearColor.o
-
-# target to build an object file
-testClearColor.cpp.o:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/testClearColor.cpp.o
-.PHONY : testClearColor.cpp.o
-
-testClearColor.i: testClearColor.cpp.i
-.PHONY : testClearColor.i
-
-# target to preprocess a source file
-testClearColor.cpp.i:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/testClearColor.cpp.i
-.PHONY : testClearColor.cpp.i
-
-testClearColor.s: testClearColor.cpp.s
-.PHONY : testClearColor.s
-
-# target to generate assembly for a file
-testClearColor.cpp.s:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/testClearColor.cpp.s
-.PHONY : testClearColor.cpp.s
-
-testTexture.o: testTexture.cpp.o
-.PHONY : testTexture.o
-
-# target to build an object file
-testTexture.cpp.o:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/testTexture.cpp.o
-.PHONY : testTexture.cpp.o
-
-testTexture.i: testTexture.cpp.i
-.PHONY : testTexture.i
-
-# target to preprocess a source file
-testTexture.cpp.i:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/testTexture.cpp.i
-.PHONY : testTexture.cpp.i
-
-testTexture.s: testTexture.cpp.s
-.PHONY : testTexture.s
-
-# target to generate assembly for a file
-testTexture.cpp.s:
-	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/tests.dir/build.make tests/tests/CMakeFiles/tests.dir/testTexture.cpp.s
-.PHONY : testTexture.cpp.s
+dot.s:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f math/CMakeFiles/OpenGL_libs.dir/build.make math/CMakeFiles/OpenGL_libs.dir/dot.s
+.PHONY : dot.s
 
 # Help Target
 help:
@@ -259,16 +202,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... tests"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
-	@echo "... testClearColor.o"
-	@echo "... testClearColor.i"
-	@echo "... testClearColor.s"
-	@echo "... testTexture.o"
-	@echo "... testTexture.i"
-	@echo "... testTexture.s"
+	@echo "... OpenGL_libs"
+	@echo "... dot.o"
+	@echo "... dot.i"
+	@echo "... dot.s"
 .PHONY : help
 
 

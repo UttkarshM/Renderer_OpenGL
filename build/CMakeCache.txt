@@ -793,9 +793,6 @@ pkgcfg_lib_PKG_FONTCONFIG_freetype:FILEPATH=/usr/lib/libfreetype.so
 //Dependencies for the target
 shapes_LIB_DEPENDS:STATIC=general;includes;general;glad;general;glfw;general;imgui;
 
-//Dependencies for the target
-tests_LIB_DEPENDS:STATIC=general;includes;general;glad;general;glfw;general;imgui;
-
 
 ########################
 # INTERNAL cache entries

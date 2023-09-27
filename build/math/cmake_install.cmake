@@ -1,4 +1,4 @@
-# Install script for directory: /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/tests
+# Install script for directory: /home/uttkarsh/OpenGL_Library/OpenGL_library/math
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

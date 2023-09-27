@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/OpenGL_libs.dir/dot.o -o OpenGL_libs  ../include/libincludes.a 

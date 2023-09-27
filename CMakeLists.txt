@@ -7,8 +7,8 @@ add_subdirectory(external/imgui)
 
 add_subdirectory(include)
 add_subdirectory(tests/shapes)
-
-add_subdirectory(src )
-# target_link_libraries(${PROJECT_NAME} PUBLIC 
+add_subdirectory(src)
+# add_subdirectory(math)
+# target_link_libraries(${PROJECT_NAME} PUBLIC
 # tests
 # )
