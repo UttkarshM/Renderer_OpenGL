@@ -1,2 +1,2 @@
 make -C build/
-./build/math/OpenGL_libs
+./build/src/OpenGL_libs
