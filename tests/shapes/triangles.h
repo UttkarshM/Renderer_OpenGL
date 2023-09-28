@@ -32,9 +32,11 @@ namespace Shapes{
       void imGuiRender() override;
       void Rotate();
       void Scale();
+      void Traverse();
     private:
       glm::vec3 translation;
       glm::vec3 translationview;
+      glm::vec3 scaler;
       float scale;
       float rotatey;
       float rotatez;
