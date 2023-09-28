@@ -10,21 +10,30 @@
 
 #include "../../include/shaderClass.h"
 
+#include"../../external/imgui/imgui.h"
+#include "../../external/imgui/imgui_impl_glfw.h"
+#include "../../external/imgui/imgui_impl_opengl3.h"
+
 
 class Camera
 {
   public:
-    glm::vec3 Position;
-    glm::vec3 Orientation = glm::vec3(0.0f,0.0f,-1.0f);
-    glm::vec3 Up = glm::vec3(0.0f,1.0f,0.0f);
+    Camera();
+    glm::mat4 Translate();
+    glm::mat4 Rotate();
+    glm::mat4 Scale();
+    glm::mat4 MATRIX();
+  private:
+    glm::mat4 translate;
+    glm::mat4 rotate;
+    glm::mat4 scaler;
+    float xRotate;
+    float yRotate;
+    float zRotate;
+    glm::vec3 matrix;
+    glm::vec3 translateVec;
 
-    int width,height;
-
-    float speed=0.1f,sensitivity=100.0f;
-
-    Camera(int width,int height,glm::vec3 position);
-    void Matrix(float FOVdeg,float nearplane,float farplane,Shader& shader,const char* uniform);
-    void Inputs(GLFWwindow* window);
+    bool local;
 };
 
 

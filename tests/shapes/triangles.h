@@ -37,6 +37,7 @@ namespace Shapes{
       glm::vec3 translation;
       glm::vec3 translationview;
       glm::vec3 scaler;
+      glm::mat4 mvp;
       float scale;
       float rotatey;
       float rotatez;

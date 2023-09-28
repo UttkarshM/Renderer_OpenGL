@@ -400,4 +400,8 @@ tests/shapes/CMakeFiles/shapes.dir/camera.o: \
  /usr/include/c++/13.2.1/bits/enable_special_members.h \
  /usr/include/c++/13.2.1/bits/node_handle.h \
  /usr/include/c++/13.2.1/bits/erase_if.h /usr/include/c++/13.2.1/sstream \
- /usr/include/c++/13.2.1/bits/sstream.tcc
+ /usr/include/c++/13.2.1/bits/sstream.tcc \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imgui.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imconfig.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imgui_impl_glfw.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imgui_impl_opengl3.h

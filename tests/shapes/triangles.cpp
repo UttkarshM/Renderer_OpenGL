@@ -5,25 +5,9 @@
 
 namespace Shapes{
   Triangle::Triangle()
-    :translation(0.0f,0.0f,0.0f),
-    translationview(0.0f,-0.0f,0.0f),
-    scale(1.0f),
-    rotatez(0.0f),
-    rotatex(0.0f),
-    rotatey(0.0f),
-    global(true),
-    scaler(1.0f,1.0f,1.0f)
+    :
+    mvp(1.0f)
     {
-    /*   GLfloat vertices[]={ */
-    /*   -0.2500f,-0.2500f,-0.25f, 0.0f,0.0f, //bottom left 0 */
-    /*   0.2500f,-0.2500f,0.25f,   1.0f,0.0f,//top left 1 */
-    /*   0.2500f,0.2500f,0.25f,    1.0f,1.0f,//top right 2 */
-    /*   -0.2500f,0.2500f,0.25f,    0.0f,1.0f//bottom right 4 */
-    /* }; */
-    /* GLuint indices[]={ */
-    /*   0,1,2, */
-    /*   2,3,0 */
-    /* }; */
       GLfloat vertices[]={
         -0.25f,0.0f,0.0f, 0.25f,0.0f,  // left part 0
         0.25f,0.0f,0.0f,  0.75f,0.0f,     // right 1
@@ -72,37 +56,12 @@ namespace Shapes{
     glEnable(GL_BLEND);
     glEnable(GL_DEPTH_TEST);
     glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
+    camera=std::make_unique<Camera>();
   }
   void Triangle::onRender(){
     renderer = std::make_unique<Renderer>();
-    float width = float(windowWidth);
-    float height = float(windowHeight);
-
-    glm::mat4 proj = glm::mat4(1.0f);
-    glm::mat4 projx = glm::mat4(1.0f);
-    glm::mat4 projy = glm::mat4(1.0f);
-    glm::mat4 projz = glm::mat4(1.0f);
-
-    /* proj = glm::perspective(glm::radians(rotatex),float(width/height),-0.01f,1.0f); */
-
-    projx = glm::rotate(glm::mat4(1.0f),glm::radians(rotatex),glm::vec3(1.0f,0.0f,0.0f));
-    projy = glm::rotate(glm::mat4(1.0f),glm::radians(rotatey),glm::vec3(0.0f,1.0f,0.0f));
-    projz = glm::rotate(glm::mat4(1.0f),glm::radians(rotatez),glm::vec3(0.0f,0.0f,1.0f));
-
-    proj=projx*projy*projz;
-    glm::mat4 scales = glm::scale(glm::mat4(1.0f),scaler);
-    glm::mat4 view = glm::translate(glm::mat4(1.0f),translationview);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
       shader->activate();
-      glm::mat4 model(1.0f);
-
-      //basically the order of multiplying the matrix also matters
-      //for local rotationg proj and view need to be on  the right
-      glm::mat4 mvp = scales*model*view*proj;
-      
-      if(!global)
-        mvp = scales*proj*view*model;
-
       shader->UseUniformMat4f("u_MVP",mvp);
       ebo->Bind();
       renderer->Draw(*vao,*ebo,*shader);
@@ -111,23 +70,6 @@ namespace Shapes{
 
   }
   void Triangle::imGuiRender(){
-    Traverse();
-    ImGui::NewLine();
-    Rotate();
-    ImGui::NewLine();
-    Scale();
-    ImGui::NewLine();
-  }
-  void Triangle::Traverse(){
-    ImGui::SliderFloat3("x axis and y axis is controlled by this ",&translationview.x,-1.0f,1.0f);
-  }
-  void Triangle::Rotate(){
-    ImGui::Checkbox("local:",&global);
-    ImGui::SliderFloat("rotate x",&rotatex,0.0f,360.0f);
-    ImGui::SliderFloat("rotate y",&rotatey,0.0f,360.0f);
-    ImGui::SliderFloat("rotate z",&rotatez,0.0f,360.0f);
-  }
-  void Triangle::Scale(){
-    ImGui::SliderFloat2("size",&scaler.x,1,4);
+    mvp=camera->MATRIX();
   }
 }
