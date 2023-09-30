@@ -1,49 +1,30 @@
-#pragma once
 #include "shapes.h"
-#include "camera.h"
-#include "lighting.h"
-#include "../../external/glm/glm/glm.hpp"
-#include "../../external/glm/glm/gtc/matrix_transform.hpp"
-
-#include "../../external/imgui/imgui.h"
-#include "../../external/imgui/imgui_impl_glfw.h"
-#include "../../external/imgui/imgui_impl_opengl3.h"
-
+#include"../../external/glm/glm/glm.hpp"
+#include"../../external/glm/glm/gtc/matrix_transform.hpp"
+#include"../../external/glm/glm/gtc/type_ptr.hpp"
+#include"../../external/glm/glm/gtx/rotate_vector.hpp"
+#include"../../external/glm/glm/gtx/vector_angle.hpp"
 #include "../../include/VAO.h"
 #include "../../include/shaderClass.h"
 #include "../../include/renderer.h"
 #include "../../include/stb_image.h"
 #include "../../include/layout.h"
 #include "../../include/texture.h"
-
-
-#include <algorithm>
-#include <memory>
-
-#define windowWidth 960
-#define windowHeight 540
-
+#include "camera.h"
+#include<memory>
 
 namespace Shapes{
-  class Triangle:public Shape{
+  class Lighting:public Shape{
     public:
-      Triangle();
-      ~Triangle();
+      Lighting();
       void onRender() override;
       void imGuiRender() override;
       void Rotate();
       void Scale();
       void Traverse();
+      void LightColor();
     private:
-      glm::vec3 translation;
-      glm::vec3 translationview;
-      glm::vec3 scaler;
       glm::mat4 mvp;
-      float scale;
-      float rotatey;
-      float rotatez;
-      float rotatex;
-      bool global;
       /* glm::mat4 view; */
       /* glm::mat4 proj; */
 
@@ -53,7 +34,5 @@ namespace Shapes{
       std::unique_ptr<Renderer> renderer;
       std::unique_ptr<Texture> texture;
       std::unique_ptr<Camera> camera;
-      std::unique_ptr<Lighting> lighting;
   };
-
 }

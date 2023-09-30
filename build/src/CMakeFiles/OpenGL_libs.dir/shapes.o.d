@@ -418,12 +418,10 @@ src/CMakeFiles/OpenGL_libs.dir/shapes.o: \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/../gtx/norm.inl \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/../gtx/quaternion.inl \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../external/glm/glm/gtx/vector_angle.inl \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/lighting.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../include/stb_image.h \
  /usr/include/c++/13.2.1/stdlib.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/src/../tests/shapes/../../include/texture.h \
- /usr/include/c++/13.2.1/algorithm \
- /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13.2.1/pstl/execution_defs.h \
  /usr/include/c++/13.2.1/memory \
  /usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13.2.1/bits/align.h \
@@ -436,4 +434,7 @@ src/CMakeFiles/OpenGL_libs.dir/shapes.o: \
  /usr/include/c++/13.2.1/bits/atomic_base.h \
  /usr/include/c++/13.2.1/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13.2.1/backward/auto_ptr.h \
- /usr/include/c++/13.2.1/pstl/glue_memory_defs.h
+ /usr/include/c++/13.2.1/pstl/glue_memory_defs.h \
+ /usr/include/c++/13.2.1/pstl/execution_defs.h \
+ /usr/include/c++/13.2.1/algorithm \
+ /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h

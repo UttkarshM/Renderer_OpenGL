@@ -206,6 +206,21 @@ color.s:
 .PHONY : color.s
 
 # target to build an object file
+lighting.o:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/lighting.o
+.PHONY : lighting.o
+
+# target to preprocess a source file
+lighting.i:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/lighting.i
+.PHONY : lighting.i
+
+# target to generate assembly for a file
+lighting.s:
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/lighting.s
+.PHONY : lighting.s
+
+# target to build an object file
 menu.o:
 	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build && $(MAKE) $(MAKESILENT) -f tests/shapes/CMakeFiles/shapes.dir/build.make tests/shapes/CMakeFiles/shapes.dir/menu.o
 .PHONY : menu.o
@@ -254,6 +269,9 @@ help:
 	@echo "... color.o"
 	@echo "... color.i"
 	@echo "... color.s"
+	@echo "... lighting.o"
+	@echo "... lighting.i"
+	@echo "... lighting.s"
 	@echo "... menu.o"
 	@echo "... menu.i"
 	@echo "... menu.s"

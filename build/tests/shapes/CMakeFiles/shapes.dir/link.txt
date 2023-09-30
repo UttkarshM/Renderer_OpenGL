@@ -1,2 +1,2 @@
-/usr/bin/ar qc libshapes.a CMakeFiles/shapes.dir/color.o CMakeFiles/shapes.dir/menu.o CMakeFiles/shapes.dir/triangles.o CMakeFiles/shapes.dir/camera.o
+/usr/bin/ar qc libshapes.a CMakeFiles/shapes.dir/color.o CMakeFiles/shapes.dir/menu.o CMakeFiles/shapes.dir/triangles.o CMakeFiles/shapes.dir/camera.o CMakeFiles/shapes.dir/lighting.o
 /usr/bin/ranlib libshapes.a

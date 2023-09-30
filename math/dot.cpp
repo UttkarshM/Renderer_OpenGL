@@ -25,11 +25,12 @@ int main(){
 
 
   glm::vec3 pointa(1.0f,2.0f,-1.5f);
+  glm::vec3 pointnew = glm::normalize(pointa);
   glm::vec3 pointc(1.0f,2.0f,-1.5f);
   glm::vec3 pointb(0.0f,1.0f,1.5f);
 
 
-  float dotproduct = glm::dot(pointa,pointb);
+  float dotproduct = glm::dot(pointc,pointb);
   std::cout<< std:: acos(dotproduct) * 180.0f/M_PI //the answer that is given is in radians hence we are converting it into degrees
                                                     <<std::endl;
   glm::vec3 crossproduct = glm::cross(pointa,pointb);

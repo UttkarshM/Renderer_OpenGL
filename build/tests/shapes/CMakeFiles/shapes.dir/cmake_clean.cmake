@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/shapes.dir/camera.o.d"
   "CMakeFiles/shapes.dir/color.o"
   "CMakeFiles/shapes.dir/color.o.d"
+  "CMakeFiles/shapes.dir/lighting.o"
+  "CMakeFiles/shapes.dir/lighting.o.d"
   "CMakeFiles/shapes.dir/menu.o"
   "CMakeFiles/shapes.dir/menu.o.d"
   "CMakeFiles/shapes.dir/triangles.o"

@@ -1,7 +1,7 @@
-tests/shapes/CMakeFiles/shapes.dir/triangles.o: \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/triangles.cpp \
+tests/shapes/CMakeFiles/shapes.dir/lighting.o: \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/lighting.cpp \
  /usr/include/stdc-predef.h \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/triangles.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/lighting.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/shapes.h \
  /usr/include/c++/13.2.1/vector \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
@@ -158,11 +158,6 @@ tests/shapes/CMakeFiles/shapes.dir/triangles.o: \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
  /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/istream \
  /usr/include/c++/13.2.1/bits/istream.tcc \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/camera.h \
- /usr/include/glad/glad.h /usr/include/KHR/khrplatform.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glfw/include/GLFW/glfw3.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/glm/glm/glm.hpp \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/glm/glm/detail/_fixes.hpp \
  /usr/include/c++/13.2.1/cmath /usr/include/math.h \
@@ -187,7 +182,10 @@ tests/shapes/CMakeFiles/shapes.dir/triangles.o: \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/glm/glm/detail/setup.hpp \
  /usr/include/c++/13.2.1/cassert /usr/include/assert.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/glm/glm/detail/../simd/platform.h \
- /usr/include/c++/13.2.1/cstdint /usr/include/c++/13.2.1/climits \
+ /usr/include/c++/13.2.1/cstdint \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/c++/13.2.1/climits \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
@@ -400,26 +398,28 @@ tests/shapes/CMakeFiles/shapes.dir/triangles.o: \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/glm/glm/gtx/../gtx/../gtx/norm.inl \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/glm/glm/gtx/../gtx/quaternion.inl \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/glm/glm/gtx/vector_angle.inl \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../include/shaderClass.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../include/VAO.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../include/VBO.h \
+ /usr/include/glad/glad.h /usr/include/KHR/khrplatform.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/external/glfw/include/GLFW/glfw3.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../include/layout.h \
- /usr/include/GL/gl.h /usr/include/c++/13.2.1/fstream \
- /usr/include/c++/13.2.1/bits/codecvt.h \
+ /usr/include/GL/gl.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../include/shaderClass.h \
+ /usr/include/c++/13.2.1/fstream /usr/include/c++/13.2.1/bits/codecvt.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/13.2.1/bits/fstream.tcc /usr/include/c++/13.2.1/sstream \
  /usr/include/c++/13.2.1/bits/sstream.tcc \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imgui.h \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imconfig.h \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imgui_impl_glfw.h \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imgui_impl_opengl3.h \
- /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/lighting.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../include/renderer.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../include/EBO.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../include/stb_image.h \
  /usr/include/c++/13.2.1/stdlib.h \
  /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../include/texture.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/camera.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imgui.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imconfig.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imgui_impl_glfw.h \
+ /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/../../external/imgui/imgui_impl_opengl3.h \
  /usr/include/c++/13.2.1/memory \
  /usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13.2.1/bits/align.h \
@@ -433,6 +433,4 @@ tests/shapes/CMakeFiles/shapes.dir/triangles.o: \
  /usr/include/c++/13.2.1/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13.2.1/backward/auto_ptr.h \
  /usr/include/c++/13.2.1/pstl/glue_memory_defs.h \
- /usr/include/c++/13.2.1/pstl/execution_defs.h \
- /usr/include/c++/13.2.1/algorithm \
- /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h
+ /usr/include/c++/13.2.1/pstl/execution_defs.h

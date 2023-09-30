@@ -125,12 +125,27 @@ tests/shapes/CMakeFiles/shapes.dir/camera.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shapes.dir/camera.s"
 	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build/tests/shapes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/camera.cpp -o CMakeFiles/shapes.dir/camera.s
 
+tests/shapes/CMakeFiles/shapes.dir/lighting.o: tests/shapes/CMakeFiles/shapes.dir/flags.make
+tests/shapes/CMakeFiles/shapes.dir/lighting.o: /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/lighting.cpp
+tests/shapes/CMakeFiles/shapes.dir/lighting.o: tests/shapes/CMakeFiles/shapes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/shapes/CMakeFiles/shapes.dir/lighting.o"
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build/tests/shapes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/shapes/CMakeFiles/shapes.dir/lighting.o -MF CMakeFiles/shapes.dir/lighting.o.d -o CMakeFiles/shapes.dir/lighting.o -c /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/lighting.cpp
+
+tests/shapes/CMakeFiles/shapes.dir/lighting.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shapes.dir/lighting.i"
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build/tests/shapes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/lighting.cpp > CMakeFiles/shapes.dir/lighting.i
+
+tests/shapes/CMakeFiles/shapes.dir/lighting.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shapes.dir/lighting.s"
+	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build/tests/shapes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/lighting.cpp -o CMakeFiles/shapes.dir/lighting.s
+
 # Object files for target shapes
 shapes_OBJECTS = \
 "CMakeFiles/shapes.dir/color.o" \
 "CMakeFiles/shapes.dir/menu.o" \
 "CMakeFiles/shapes.dir/triangles.o" \
-"CMakeFiles/shapes.dir/camera.o"
+"CMakeFiles/shapes.dir/camera.o" \
+"CMakeFiles/shapes.dir/lighting.o"
 
 # External object files for target shapes
 shapes_EXTERNAL_OBJECTS =
@@ -139,9 +154,10 @@ tests/shapes/libshapes.a: tests/shapes/CMakeFiles/shapes.dir/color.o
 tests/shapes/libshapes.a: tests/shapes/CMakeFiles/shapes.dir/menu.o
 tests/shapes/libshapes.a: tests/shapes/CMakeFiles/shapes.dir/triangles.o
 tests/shapes/libshapes.a: tests/shapes/CMakeFiles/shapes.dir/camera.o
+tests/shapes/libshapes.a: tests/shapes/CMakeFiles/shapes.dir/lighting.o
 tests/shapes/libshapes.a: tests/shapes/CMakeFiles/shapes.dir/build.make
 tests/shapes/libshapes.a: tests/shapes/CMakeFiles/shapes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libshapes.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/uttkarsh/OpenGL_Library/OpenGL_library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libshapes.a"
 	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build/tests/shapes && $(CMAKE_COMMAND) -P CMakeFiles/shapes.dir/cmake_clean_target.cmake
 	cd /home/uttkarsh/OpenGL_Library/OpenGL_library/build/tests/shapes && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shapes.dir/link.txt --verbose=$(VERBOSE)
 
