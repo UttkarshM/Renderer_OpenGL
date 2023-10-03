@@ -44,6 +44,7 @@ namespace Shapes{
       float rotatez;
       float rotatex;
       bool global;
+      float BackColor[4];
       /* glm::mat4 view; */
       /* glm::mat4 proj; */
 

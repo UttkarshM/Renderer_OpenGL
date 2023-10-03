@@ -18,7 +18,7 @@
 class Camera
 {
   public:
-    Camera();
+    Camera(GLfloat defaultVal=0.0f);
     glm::mat4 Translate();
     glm::mat4 Rotate();
     glm::mat4 Scale();

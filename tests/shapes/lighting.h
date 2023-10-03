@@ -11,6 +11,7 @@
 #include "../../include/layout.h"
 #include "../../include/texture.h"
 #include "camera.h"
+#include <vector>
 #include<memory>
 
 namespace Shapes{
@@ -23,8 +24,13 @@ namespace Shapes{
       void Scale();
       void Traverse();
       void LightColor();
+      inline std::vector<float> ReturnColor(){
+        std::vector<float> vec={BackColor[0],BackColor[1],BackColor[2],BackColor[3]};
+        return vec;
+      };
     private:
       glm::mat4 mvp;
+      float BackColor[4];
       /* glm::mat4 view; */
       /* glm::mat4 proj; */
 

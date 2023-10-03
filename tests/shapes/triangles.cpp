@@ -1,10 +1,12 @@
 #include "triangles.h"
 #include <memory>
+#include <vector>
 
 namespace Shapes{
   Triangle::Triangle()
     :
-    mvp(1.0f)
+    mvp(1.0f),
+    BackColor{1.0f,1.0f,1.0f,1.0f}
     {
       /* GLfloat vertices[]={ */
       /*   -0.25f,0.0f,0.0f,             0.0f,1.0f,  // left part 0 */
@@ -77,8 +79,12 @@ namespace Shapes{
   void Triangle::onRender(){
     renderer = std::make_unique<Renderer>();
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    lighting->onRender();
+    lighting->imGuiRender();
       shader->activate();
       shader->UseUniformMat4f("u_MVP",mvp);
+      std::vector<float> vec = lighting->ReturnColor();
+      shader->UseUniformNumber("u_Color",vec[0],vec[1],vec[2],vec[3]);
       ebo->Bind();
       renderer->Draw(*vao,*ebo,*shader);
   }
@@ -87,6 +93,7 @@ namespace Shapes{
   }
   void Triangle::imGuiRender(){
     mvp=camera->MATRIX();
+
     /* ImGui::ShowDemoWindow(); */
     /* lighting->imGuiRender(); */
 

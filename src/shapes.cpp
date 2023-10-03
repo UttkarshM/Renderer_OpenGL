@@ -50,6 +50,7 @@ int main(){
 
   menu->RegisterProp<Shapes::Color>("set color");
   menu->RegisterProp<Shapes::Triangle>("create a triangle");
+  menu->RegisterProp<Shapes::Lighting>("create the lighting");
 
   while(!glfwWindowShouldClose(window)){
     glfwPollEvents();

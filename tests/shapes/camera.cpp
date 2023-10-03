@@ -1,20 +1,20 @@
 #include "camera.h"
-Camera::Camera()
+Camera::Camera(GLfloat defaultVar)
 :
-translate(glm::mat4(1.0f)),
-rotate(glm::mat4(1.0f)),
-scaler(glm::mat4(1.0f)),
-local(true),
+  translate(glm::mat4(1.0f)),
+  rotate(glm::mat4(1.0f)),
+  scaler(glm::mat4(1.0f)),
+  local(true),
   xRotate(0.0f),
   yRotate(0.0f),
   zRotate(0.0f),
   matrix(1.0f,1.0f,1.0f),
-  translateVec(0.0f,0.0f,0.0f)
+  translateVec(defaultVar,0.0f,0.0f)
 {
 
 }
 glm::mat4 Camera::Scale(){
-  ImGui::SliderFloat2("Increase the size of x",&matrix.x,1,4);
+  ImGui::SliderFloat2("Increase the size of x",&matrix.x,1,16);
   scaler = glm::scale(glm::mat4(1.0f),matrix);
   return scaler;
 }
