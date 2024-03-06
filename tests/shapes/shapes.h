@@ -1,17 +1,17 @@
 #pragma once
 
-#include<vector>
-#include<string>
-#include<functional>
-#include<iostream>
+/* #include "GLFW/glfw3.h" */
+#include <functional>
+#include <iostream>
+#include <string>
+#include <vector>
 
-
-namespace Shapes{
-  class Shape{
-    public:
-      Shape(){};
-      /* ~Shape(){}; */
-      virtual void onRender(){};
-      virtual void imGuiRender(){};
-  };
-}
+namespace Shapes {
+class Shape {
+public:
+  Shape(){};
+  /* ~Shape(){}; */
+  virtual void onRender(){};
+  virtual void imGuiRender(){};
+};
+} // namespace Shapes

@@ -46,10 +46,10 @@ namespace Shapes{
 	  3, 0, 4
   };
 
-    shader = std::make_unique<Shader>("/home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/resources/shaders/f1.shader",
-        "/home/uttkarsh/OpenGL_Library/OpenGL_library/tests/shapes/resources/shaders/v1.shader");
+    shader = std::make_unique<Shader>("/home/uttkarsh/OpenGL/Renderer_OpenGL/tests/shapes/resources/shaders/f1.shader",
+        "/home/uttkarsh/OpenGL/Renderer_OpenGL/tests/shapes/resources/shaders/v1.shader");
 
-    texture = std::make_unique<Texture>("/home/uttkarsh/OPENGL/open_gl/include/resources/textures/sky.jpg");
+    texture = std::make_unique<Texture>("/home/uttkarsh/OpenGL/Renderer_OpenGL/tests/shapes/resources/textures/sky.jpg");
     texture->Bind(0);
     
     shader->UseUniform1i("u_Texture",0);
