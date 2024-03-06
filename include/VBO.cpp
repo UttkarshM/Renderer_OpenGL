@@ -1,4 +1,5 @@
 #include "VBO.h"
+/* #include "../external/glad/include/glad/glad.h" */
 
 VBO::VBO(const void* data,GLuint size){
   glGenBuffers(1,&ID);

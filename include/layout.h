@@ -1,6 +1,7 @@
 #pragma once
 /* #include <GL/gl.h> */
-#include "../external/glfw/include/GLFW/glfw3.h"
+#include "../external/glad/include/glad/glad.h"
+/* #include "../external/glfw/include/GLFW/glfw3.h" */
 #include <vector>
 struct VertexBufferElements {
   unsigned int count;

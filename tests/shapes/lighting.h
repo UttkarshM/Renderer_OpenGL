@@ -1,9 +1,12 @@
+
+#include "../../external/glad/include/glad/glad.h"
 #include "shapes.h"
 #include"../../external/glm/glm/glm.hpp"
 #include"../../external/glm/glm/gtc/matrix_transform.hpp"
 #include"../../external/glm/glm/gtc/type_ptr.hpp"
 #include"../../external/glm/glm/gtx/rotate_vector.hpp"
 #include"../../external/glm/glm/gtx/vector_angle.hpp"
+/* #include "GLFW/glfw3.h" */
 #include "../../include/VAO.h"
 #include "../../include/shaderClass.h"
 #include "../../include/renderer.h"

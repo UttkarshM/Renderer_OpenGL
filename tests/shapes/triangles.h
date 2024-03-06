@@ -1,4 +1,5 @@
 #pragma once
+#include "../../external/glad/include/glad/glad.h"
 #include "shapes.h"
 #include "camera.h"
 #include "lighting.h"

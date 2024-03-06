@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../external/glad/include/glad/glad.h"
+/* #include "../../external/glad/include/glad/glad.h" */
 #include "../../external/glfw/include/GLFW/glfw3.h"
 #include "../../external/glm/glm/glm.hpp"
 #include "../../external/glm/glm/gtc/matrix_transform.hpp"
@@ -8,7 +8,7 @@
 #include "../../external/glm/glm/gtx/rotate_vector.hpp"
 #include "../../external/glm/glm/gtx/vector_angle.hpp"
 
-#include "../../include/shaderClass.h"
+/* #include "../../include/shaderClass.h" */
 
 #include "../../external/imgui/imgui.h"
 #include "../../external/imgui/imgui_impl_glfw.h"

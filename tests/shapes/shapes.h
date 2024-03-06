@@ -1,6 +1,8 @@
 #pragma once
 
 /* #include "GLFW/glfw3.h" */
+#include "../../external/glad/include/glad/glad.h"
+#include "../../external/glfw/include/GLFW/glfw3.h"
 #include <functional>
 #include <iostream>
 #include <string>
@@ -13,5 +15,7 @@ public:
   /* ~Shape(){}; */
   virtual void onRender(){};
   virtual void imGuiRender(){};
+
+  GLFWwindow* GLwindow;
 };
 } // namespace Shapes

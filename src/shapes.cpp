@@ -1,10 +1,13 @@
+#define GLFW_INCLUDE_NONE
 
 #include "../external/glad/include/glad/glad.h"
 #include "../external/glfw/include/GLFW/glfw3.h"
+/* #include "glad/glad.h" */
+/* #include "GLFW/glfw3.h" */
 
-#include "../include/VAO.h"
-#include "../include/renderer.h"
-#include "../include/shaderClass.h"
+/* #include "../include/VAO.h" */
+/* #include "../include/renderer.h" */
+/* #include "../include/shaderClass.h" */
 
 #include "../external/imgui/imgui.h"
 #include "../external/imgui/imgui_impl_glfw.h"
@@ -44,8 +47,9 @@ int main() {
 
     Shapes::Color color;
     Shapes::Shape *current = nullptr;
-    Shapes::Menu *menu = new Shapes::Menu(current, window);
+    Shapes::Menu *menu = new Shapes::Menu(current);
     current = menu;
+    current->GLwindow=window;
 
     menu->RegisterProp<Shapes::Color>("set color");
     menu->RegisterProp<Shapes::Triangle>("create a triangle");

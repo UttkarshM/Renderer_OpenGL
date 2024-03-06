@@ -1,9 +1,9 @@
 #pragma once
 #include"VBO.h"
 #include"layout.h"
-/* #include <GLFW/glfw3.h> */
 /* #include <glad/glad.h> */
 
+/* #include <GLFW/glfw3.h> */
 class VAO{
     /* private: */
   public:
