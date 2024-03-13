@@ -1,6 +1,8 @@
 #include "camera.h"
-Camera::Camera(GLfloat defaultVar)
+#include <iostream>
+Camera::Camera(GLFWwindow** window,GLfloat defaultVar)
 :
+  GLwindow(window),
   translate(glm::mat4(1.0f)),
   rotate(glm::mat4(1.0f)),
   scaler(glm::mat4(1.0f)),
@@ -11,7 +13,6 @@ Camera::Camera(GLfloat defaultVar)
   matrix(1.0f,1.0f,1.0f),
   translateVec(defaultVar,0.0f,0.0f)
 {
-
 }
 glm::mat4 Camera::Scale(){
   ImGui::SliderFloat2("Increase the size of x",&matrix.x,1,16);
@@ -36,7 +37,30 @@ glm::mat4 Camera::Rotate(){
 }
 glm::mat4 Camera::Translate(){
   ImGui::NewLine();
-  ImGui::SliderFloat3("co-ords [x,y,z]",&translateVec.x,-10.0f,10.0f);
+  /* if(&GLwindow!=nullptr){ */
+  ImGui::SliderFloat3("co-ords [x,y,z]",&translateVec.x,-10.0f,10.0f); 
+  /* } */
+  /* else{ */
+  GLFWwindow* win = *this->GLwindow;
+  std::cout<<&*this->GLwindow<<std::endl;
+    /* std::cout<<"window exists"<<std::endl; */
+  if(glfwGetKey(*this->GLwindow,GLFW_KEY_A)==GLFW_PRESS){
+    std::cout<<"right"<<std::endl;
+    translateVec.x+=0.1f;
+  }
+  if(glfwGetKey(*this->GLwindow,GLFW_KEY_A)==GLFW_PRESS){
+    std::cout<<"left"<<std::endl;
+    translateVec.x-=0.1f;
+  }
+  if(glfwGetKey(*this->GLwindow,GLFW_KEY_W)==GLFW_PRESS){
+    std::cout<<"up"<<std::endl;
+    translateVec.y+=0.1f;
+  }
+  if(glfwGetKey(*this->GLwindow,GLFW_KEY_D)==GLFW_PRESS){
+    std::cout<<"down"<<std::endl;
+    translateVec.y-=0.1f;
+  }
+  /* } */
   translate=glm::translate(glm::mat4(1.0f),translateVec);
   return translate;
 }

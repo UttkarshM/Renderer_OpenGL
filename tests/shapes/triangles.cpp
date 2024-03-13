@@ -62,11 +62,13 @@ Triangle::Triangle() : mvp(1.0f), BackColor{1.0f, 1.0f, 1.0f, 1.0f} {
   glEnable(GL_BLEND);
   glEnable(GL_DEPTH_TEST);
   glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-  camera = std::make_unique<Camera>();
+
+  GLFWwindow*& temp = this->GLwindow;
+  camera = std::make_unique<Camera>(&this->GLwindow);
   lighting = std::make_unique<Lighting>();
 }
 void Triangle::onRender() {
-  std::cout<<&this->GLwindow<<std::endl;
+  /* std::cout<<&this->GLwindow<<std::endl; */
   renderer = std::make_unique<Renderer>();
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   lighting->onRender();

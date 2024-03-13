@@ -14,15 +14,17 @@
 #include "../../external/imgui/imgui_impl_glfw.h"
 #include "../../external/imgui/imgui_impl_opengl3.h"
 
+/* GLFWwindow* val=nullptr; */
 class Camera {
 public:
-  Camera(GLfloat defaultVal = 0.0f);
+  Camera(GLFWwindow** window,GLfloat defaultVal = 0.0f);
   glm::mat4 Translate();
   glm::mat4 Rotate();
   glm::mat4 Scale();
   glm::mat4 MATRIX();
 
 private:
+  GLFWwindow** GLwindow;
   glm::mat4 translate;
   glm::mat4 rotate;
   glm::mat4 scaler;

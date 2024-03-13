@@ -30,6 +30,7 @@ int main() {
                                         "this is a window", nullptr, nullptr);
   glfwMakeContextCurrent(window);
   gladLoadGL();
+  std::cout<<"first cycle"<<&window<<std::endl;
 
   IMGUI_CHECKVERSION();
   ImGui::CreateContext();

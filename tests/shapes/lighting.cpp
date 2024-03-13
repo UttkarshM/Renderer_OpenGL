@@ -1,7 +1,7 @@
 #include "lighting.h"
 /* #include "../../external/glad/include/glad/glad.h" */
-#include <GLFW/glfw3.h>
 #include <glad/glad.h>
+#include <GLFW/glfw3.h>
 #include <iostream>
 
 namespace Shapes {
@@ -52,7 +52,7 @@ Lighting::Lighting() : mvp(1.0f), BackColor{1.0f, 1.0f, 1.0f, 1.0f} {
   vao->Bind();
   vao->Unbind();
   vbo.Unbind();
-  camera = std::make_unique<Camera>();
+  camera = std::make_unique<Camera>(&this->GLwindow);
 }
 void Lighting::onRender() {
   renderer = std::make_unique<Renderer>();
